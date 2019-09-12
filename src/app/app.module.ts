@@ -9,6 +9,13 @@ import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from "./authors.service";
 import { FormsModule } from "@angular/forms";
 import { SummaryPipe } from "./summary.pipe";
+import { StarComponent } from './star/star.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatIconModule } from "@angular/material";
+import { ImputTitleComponent } from './imput-title/imput-title.component';
+import { TitleCasePipe } from './title-case.pipe';
+
+
 
 @NgModule({
   declarations: [
@@ -16,12 +23,17 @@ import { SummaryPipe } from "./summary.pipe";
     CoursesComponent,
     CourseComponent,
     AuthorsComponent,
-    SummaryPipe
+    SummaryPipe,
+    StarComponent,
+    ImputTitleComponent,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [
     CoursesService,
